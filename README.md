@@ -69,6 +69,14 @@ npm run dev
 The application runs at:
 http://localhost:5173
 
+Live Deployment
+
+Production URL:
+https://stocksync-ruddy.vercel.app
+
+This project is deployed on Vercel with Supabase as the backend.
+New users can register and manage their own inventory in an isolated environment.
+
 Architecture
 
 The system follows a client–server architecture:
