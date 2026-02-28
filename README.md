@@ -1,28 +1,32 @@
-Inventory Management System
+StockSync – Inventory Management System
 
-A web-based inventory management system designed to help material businesses track stock levels, monitor
-alerts, and analyze inventory performance through a centralized dashboard.
+StockSync is a modern web-based inventory management system designed to help material businesses and small industries track stock levels, monitor alerts, and analyze inventory performance from a centralized dashboard.
+
+The application is built with React, TypeScript, and Supabase, following a clean multi-user architecture with secure data isolation.
 
 Project Overview:
 
-This project provides a structured solution for managing inventory operations such as stock tracking, alert handling, 
-and performance analysis. It is built with a modern frontend stack and integrates real-time data handling to support 
-efficient inventory management.
+StockSync provides a structured and scalable solution for managing:
+Inventory items
+Categories
+Stock levels
+Alerts
+Performance analytics
 
-Key objectives of the system include:
-
-1. Improving visibility into inventory levels
-2. Identifying low stock and dead stock items
-3. Providing analytical insights for better decision-making
+Each user has their own isolated workspace. When a new user signs up, their categories and inventory will initially be empty by design. This ensures secure, user-specific data management suitable for real-world deployment.
 
 Features:
 
-User authentication (sign up and login)
-Inventory management (add, view, and search items)
+Secure user authentication (Sign Up / Login)
+User-specific inventory management
+Add, view, update, and search inventory items
+Category-based stock organization
 Dashboard with key inventory metrics
-Alerts for low stock and critical conditions
-Analytics including inventory turnover, stock aging, and ABC analysis
-Responsive and clean user interface
+Low-stock and critical alerts
+Analytics including:
+       Inventory turnover
+       Stock aging
+Responsive and clean UI
 
 Technology Stack:
 
@@ -44,34 +48,34 @@ src/
 ├── styles/            # Global styles
 └── App.tsx            # Application entry point
 
-Getting Started (Local Setup)
+Local Setup
+
 Prerequisites
-
 Node.js (v16 or later)
-
 npm
 
-Installation Steps
 # Clone the repository
-git clone https://github.com/kamalmeena20/StockSync
+git clone https://github.com/shivii2005/stocksync
 
-# Navigate to the project directory
-cd StockSync|Insyd AI
+# Navigate into the project directory
+cd stocksync
 
 # Install dependencies
 npm install
 
-# Start the development server
+# Start development server
 npm run dev
 
+The application runs at:
+http://localhost:5173
 
-The application will start locally with hot reloading enabled.
+Architecture
 
-*System Architecture (High-Level):
-
-The system follows a client–server architecture where a React-based frontend interacts with 
-backend services for authentication, inventory data management, alerts, and analytics. 
-All data is centrally managed to ensure consistency and real-time updates.
+The system follows a client–server architecture:
+React frontend handles UI and interaction.
+Supabase manages authentication and database operations.
+Row-Level Security (RLS) ensures each user can only access their own data.
+React Query manages caching and synchronization.
 
 
 Assumptions:
